@@ -1,5 +1,6 @@
 module.exports = {
   firstMessage: () => {
-    console.log("Hello World");
+    console.log("Hello World dev");
   },
 };
+ 
