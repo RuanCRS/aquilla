@@ -6,10 +6,26 @@
 $ npm i aquilla --save
 ```
 
-## Connection
+```js
+const aquilla = require('aquilla');
+```
+
+## Datas
 
 ```js
-var aquila = require("aquilla");
+const jwtDatas = {
+  secretKey: 'teste',
+  timeInMinutes: 1,
+  encryptedDatas: {
+    userId: 1,
+  },
+};
+```
+
+## Results JWT
+
+```js
+const resultsJWT = aquilla.jwt(jwtDatas);
 ```
 
 Install dependencies:
