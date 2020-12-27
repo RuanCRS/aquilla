@@ -1,17 +1,13 @@
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
-const jwtController = require('./lib/controllers/jwtController');
+const jwtController = require("./lib/controllers/jwtController");
 
 module.exports = {
   jwt(datas) {
-    const jwtControllerSignJWT = jwtController.signJWT(jwt, datas);
+    const jwtControllerSignToken = jwtController.signToken(jwt, datas);
 
     return {
-      sign: {
-        token: jwtControllerSignJWT,
-        error: false,
-        message: 'JWT successfully created',
-      },
+      sign: jwtControllerSignToken,
     };
   },
 };
