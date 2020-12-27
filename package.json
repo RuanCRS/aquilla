@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RuanCRS/aquilla#readme",
   "dependencies": {
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "moment-timezone": "^0.5.32"
   }
 }
